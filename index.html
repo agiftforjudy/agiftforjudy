@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Birthday Gift</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="container">
+                <template  v-for="(message,index) in messages" >
+                    <template v-if="index=='2'">
+                        <div class="b" :id="'l'+index">
+                            <div class="chatcontext" id="showmessage">
+                                <div class="profilepic"></div>
+                                <div class="name">CHIWAWA</div>
+                                <div class="time"></div>
+                                <div class="senttext">{{message}}</div>
+                            </div>
+                            <div class="textarea">
+                                <div class="chatbox">
+                                        <h1 id="type">
+                                            {{ message }}
+                                        </h1>
+                                    <div>emoji</div>
+                                </div>
+                            
+                                <h1 id="send">send</h1>
+                            </div>
+                        </div>
+                        
+                    </template>
+                    <template v-else>
+                        <h1 class="a" :id="'l'+index">
+                            {{ message }}
+                        </h1>
+                    </template>
+                    
+                </template>
+            </div>
+        </div>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script>
+            Vue.createApp({
+                data() {
+                    return {
+                        messages: [
+                            '안녕 지윤누나',
+                            'its your birthday!!!^^',
+                            // '생일 축하해!!모든 소원이 이루...',
+                            'Happy birthday to you!!Hope you...',
+                            'Do you think I\'m going to do that?',
+                            'No!!',
+                            'I want to do somethin "Special"',
+                            'Because you are Special to me!',
+                            'so i have prepared this gift for you',
+                            'and the cool thing is that',
+                            'it will remain forever on the web',
+                            'just like you will remain in my heart forever!',
+                            'S O',
+                            'Happy birthday!!'
+                        ]
+                    }
+                }
+            }).mount('#app')
+        </script>
+    </body>
+</html>

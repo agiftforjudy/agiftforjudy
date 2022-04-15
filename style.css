@@ -164,7 +164,7 @@ font-family: "Work Sans", sans-serif;
     opacity:0;
     animation-delay:17s;
     animation-duration:20s;
-    display:flex;
+    display:flex; 
 }
 
 @keyframes show{

@@ -88,6 +88,30 @@ font-family: "Work Sans", sans-serif;
     padding-right:10px;
 }
 
+.reciever{
+    padding-left:20px;
+    color:#dcddde;
+    font-size:40px;
+}
+
+.topbar{
+    padding-top:20px;
+    padding-bottom:20px;
+    display:flex;
+    border-bottom:2px solid;
+    border-bottom-color:#32353b;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #3ba55d;
+    border-radius: 50%;
+    margin-left:15px;
+    margin-top:17px;
+    margin-bottom:17px;
+  }
+
 .b > .textarea > .chatbox > #type{
     font-size: 40px;
     font-family: 'Anonymous Pro', monospace;
@@ -106,7 +130,7 @@ font-family: "Work Sans", sans-serif;
 }
 
 .chatcontext{
-    padding-top:40px;
+    padding-top:400px;
     padding-bottom:40px;
     padding-left:10px;
 }
@@ -132,7 +156,7 @@ font-family: "Work Sans", sans-serif;
     50% {border-color: transparent;}
 }
 
-.b > *:first-child{
+.b > *:nth-child(2){
     animation-name:show;
     overflow:hidden;
     font-size: 40px;
@@ -147,7 +171,6 @@ font-family: "Work Sans", sans-serif;
     0% {opacity:0;}
     50% {opacity: 0;}
     100%,51% {opacity: 1;}
-
 }
 
 #l0{
@@ -168,7 +191,6 @@ font-family: "Work Sans", sans-serif;
 #l1{
     animation-name:l1;
     animation-delay:9s;
-    
 }
 @keyframes l1{
     0% {opacity: 0;}
@@ -200,7 +222,6 @@ font-family: "Work Sans", sans-serif;
 #l3{
     animation-name:l3;
     animation-delay:36s;
-    
 }
 @keyframes l3{
     0% {opacity: 0;}
@@ -216,7 +237,6 @@ font-family: "Work Sans", sans-serif;
 #l4{
     animation-name:l4;
     animation-delay:43s;
-    
 }
 @keyframes l4{
     0% {opacity: 0;}
@@ -231,8 +251,7 @@ font-family: "Work Sans", sans-serif;
 
 #l5{
     animation-name:l5;
-    animation-delay:50s;
-    
+    animation-delay:50s;  
 }
 @keyframes l5{
     0% {opacity: 0;}
@@ -247,8 +266,7 @@ font-family: "Work Sans", sans-serif;
 
 #l6{
     animation-name:l6;
-    animation-delay:57s;
-    
+    animation-delay:57s;  
 }
 @keyframes l6{
     0% {opacity: 0;}
@@ -263,8 +281,7 @@ font-family: "Work Sans", sans-serif;
 
 #l7{
     animation-name:l7;
-    animation-delay:64s;
-    
+    animation-delay:64s;  
 }
 @keyframes l7{
     0% {opacity: 0;}
@@ -279,8 +296,7 @@ font-family: "Work Sans", sans-serif;
 
 #l8{
     animation-name:l8;
-    animation-delay:71s;
-    
+    animation-delay:71s;  
 }
 @keyframes l8{
     0% {opacity: 0;}
@@ -295,8 +311,7 @@ font-family: "Work Sans", sans-serif;
 
 #l9{
     animation-name:l9;
-    animation-delay:78s;
-    
+    animation-delay:78s;  
 }
 @keyframes l9{
     0% {opacity: 0;}
@@ -311,8 +326,7 @@ font-family: "Work Sans", sans-serif;
 
 #l10{
     animation-name:l10;
-    animation-delay:85s;
-    
+    animation-delay:85s; 
 }
 @keyframes l10{
     0% {opacity: 0;}
@@ -328,7 +342,6 @@ font-family: "Work Sans", sans-serif;
 #l11{
     animation-name:l11;
     animation-delay:92s;
-    
 }
 @keyframes l11{
     0% {opacity: 0;}
@@ -344,9 +357,22 @@ font-family: "Work Sans", sans-serif;
 #l12{
     animation-name:l12;
     animation-delay:99s;
-    
 }
 @keyframes l12{
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {
+        overflow: hidden;
+        opacity: 0;
+        display: none;
+        visibility: hidden;}
+}
+#l13{
+    animation-name:l12;
+    animation-delay:106s; 
+}
+@keyframes l13{
     0% {opacity: 0;}
     25% {opacity: 1;}
     75% {opacity: 1;}
